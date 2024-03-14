@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}"> <!--../static/styles.css-->
+  </head>
+
+  <body id="home">
+    <h1 class="title" style="color:hsl(30, 100%, 70%)">Welcome students!</h1>
+    <p class="explaination">In this site, you will be learning about the different animals</p>
+    <p class="explaination">in this class. Unfortunately, you can't touch them since you can</p>
+    <p class="explaination">hurt them or yourself. Hopefully this interactive experience will</p>
+    <p class="explaination">be just as fun. Happy learning!</p>
+    <img src="../static/img/group-of-animals.jpg" alt="Image of a group of animals." class="img"> <!--../static/group-of-animals.jpg-->
+    <br>
+    <a href="{{ url_for('dragon_func') }}">
+      <button type="button" class="main-button">Bearded Dragon</button>
+    </a>
+    <br>
+    <a href="./bunny.html">
+      <button type="button" class="main-button">Bunny</button>
+    </a>
+    <br>
+    <a href="./chicken.html">
+      <button type="button" class="main-button">Chicken</button>
+    </a>
+    <br>
+    <a href="./dog.html">
+      <button type="button" class="main-button">Dog</button>
+    </a>
+    <br>
+    <a href="./fish.html">
+      <button type="button" class="main-button">Fish</button>
+    </a>
+    <br>
+    <a href="./guinea-pig.html">
+      <button type="button" class="main-button">Guinea Pig</button>
+    </a>
+    <br>
+    <a href="./leopard-gecko.html">
+      <button type="button" class="main-button">Leopard Gecko</button>
+    </a>
+    <br>
+    <a href="./parakeet.html">
+      <button type="button" class="main-button">Parakeet</button>
+    </a>
+    <br>
+    <a href="./zebra-finches.html">
+      <button type="button" class="main-button">Zebra Finches</button>
+    </a>
+    <br>
+    
+    
+  </body>
+</html>
