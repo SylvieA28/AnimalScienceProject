@@ -1,31 +1,46 @@
 from flask import Flask, request, render_template,jsonify
 app = Flask(__name__)
-def do_something(text1,text2):
-   text1 = text1.upper()
-   text2 = text2.upper()
-   combine = text1 + text2
-   return combine
-    
+
 
 @app.route('/')
 def home():
     return render_template('index.html')
 
 @app.route('/bearded-dragon.html')
-def dragon_func():
+def dragon():
     return render_template('bearded-dragon.html')
 
-@app.route('/join', methods=['GET','POST'])
-def my_form_post():
-    text1 = request.form['text1']
-    word = request.args.get('text1')
-    text2 = request.form['text2']
-    combine = do_something(text1,text2)
-    result = {
-        "output": combine
-    }
-    result = {str(key): value for key, value in result.items()}
-    return jsonify(result=result)
+@app.route('/bunny.html')
+def bunny():
+    return render_template('bunny.html')
+
+@app.route('/chicken.html')
+def chicken():
+    return render_template('chicken.html')
+
+@app.route('/dog.html')
+def dog():
+    return render_template('dog.html')
+
+@app.route('/fish.html')
+def fish():
+    return render_template('fish.html')
+
+@app.route('/guinea-pig.html')
+def guinea():
+    return render_template('guinea-pig.html')
+
+@app.route('/leopard-gecko.html')
+def gecko():
+    return render_template('leopard-gecko.html')
+
+@app.route('/parakeet.html')
+def parakeet():
+    return render_template('parakeet.html')
+
+@app.route('/zebra-finch.html')
+def finch():
+    return render_template('zebra-finch.html')
 
 if __name__ == '__main__':
     app.run()

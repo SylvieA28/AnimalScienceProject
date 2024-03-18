@@ -10,10 +10,6 @@
     font-size: large;
 }
 
-#home {
-    background-color:hsl(200, 100%, 98%);
-}
-
 .img,
 .main-button {
     display: block;
@@ -25,4 +21,14 @@
     font-weight: bold;
     border: 5px;
     padding: 10px;
+    text-decoration: none;
+}
+
+
+.game-window {
+    display:block;
+    margin: 0 auto;
+    padding: 25px 50px;
+    border-color:black;
+    border-width: 5px;
 }
